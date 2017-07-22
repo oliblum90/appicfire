@@ -45,7 +45,7 @@ sudo apt-get install python-numpy python-dev python-pip python-wheel
 ./configure
 bazel build --config=opt //tensorflow/tools/pip_package:build_pip_package
 bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
-sudo pip install /tmp/tensorflow_pkg/tensorflow-1.0.1-py2-none-any.whl
+sudo pip install /tmp/tensorflow_pkg/tensorflow-1.0.1-py2-none-any.whl  # the name of the *.whl file could differ
 ```
 
 
