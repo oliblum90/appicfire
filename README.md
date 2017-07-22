@@ -153,7 +153,7 @@ android_ndk_repository(
             api_level=21)
 ```
 
-Edid the [TensorflowImageListener.java](https://github.com/petewarden/tensorflow_makefile/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/TensorflowImageListener.java):
+Edid the [ClassifierActivity.java](https://github.com/petewarden/tensorflow_makefile/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/ClassifierActivity.java):
 
 ```sh
 private static final int INPUT_SIZE = 299;
@@ -165,6 +165,7 @@ private static final String OUTPUT_NAME = "final_result:0";
 private static final String MODEL_FILE = "file:///android_asset/retrained_graph.pb";
 private static final String LABEL_FILE = "file:///android_asset/retrained_labels.txt";
 ```
+also adjust the number of classes for your classifier.
 
 build .apk:
 
