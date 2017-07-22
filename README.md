@@ -136,7 +136,7 @@ tools/android update sdk --no-ui
 # get ndk
 cd ..
 wget https://dl.google.com/android/repository/android-ndk-r12b-linux-x86_64.zip
-unzip android-ndk-r12b-linux-x86_64.zip -d
+unzip android-ndk-r12b-linux-x86_64.zip
 ```
 Uncommand and modify the following lines in Tensorflow [WORKSPACE](https://github.com/tensorflow/tensorflow/blob/master/WORKSPACE). To find out the build_tools_version go to "android-sdk-linux/build_tools.
 
