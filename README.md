@@ -153,7 +153,7 @@ android_ndk_repository(
             api_level=21)
 ```
 
-Edid the [ClassifierActivity.java](https://github.com/petewarden/tensorflow_makefile/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/ClassifierActivity.java):
+Edid the [ClassifierActivity.java](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/examples/android/src/org/tensorflow/demo/ClassifierActivity.java):
 
 ```sh
 private static final int INPUT_SIZE = 299;
