@@ -8,6 +8,8 @@ case "$answer" in
         sudo add-apt-repository ppa:webupd8team/java
         sudo apt-get update
         sudo apt-get install oracle-java8-installer
+	sudo apt install curl
+	sudo apt install git
         echo "deb [arch=amd64] http://storage.googleapis.com/bazel-apt stable jdk1.8" | sudo tee /etc/apt/sources.list.d/bazel.list
         curl https://bazel.build/bazel-release.pub.gpg | sudo apt-key add -
         sudo apt-get update && sudo apt-get install bazel
@@ -36,6 +38,7 @@ echo "3.   BUILD AND RUN RETRAINER"
 echo "#########################################################"
 cd tensorflow
 bazel build tensorflow/examples/image_retraining:retrain
+bazel-bin/tensorflow/tools/pip_package/build_pip_package /tmp/tensorflow_pkg
 bazel-bin/tensorflow/examples/image_retraining/retrain --image_dir ../data
 # tensorboard --logdir /tmp/retrain_logs
 # localhost:6006
