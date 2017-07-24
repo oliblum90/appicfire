@@ -132,6 +132,7 @@ tar xvzf android-sdk_r24.4.1-linux.tgz -C tensorflow
 # update sdk
 cd tensorflow/android-sdk-linux
 tools/android update sdk --no-ui
+tools/android sdk       # add 24.0.3
 
 # get ndk
 cd ..
